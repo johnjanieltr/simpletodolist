@@ -1,0 +1,35 @@
+@import "../variables";
+
+.action-btns {
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: $btns-bg-color;
+  cursor: pointer;
+  color: $main-bg-color;
+
+  &--left {
+    left: 1rem;
+  }
+
+  &--right {
+    right: 1rem;
+  }
+
+  &__icon {
+    border-radius: inherit;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 576px) {
+  .action-btns--left {
+    display: none;
+  }
+}

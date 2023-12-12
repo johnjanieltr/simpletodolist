@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simpletodolist es una herramienta que te ayuda a llevar tus organizadas y guardadas en una lista"
+    />
+    <meta
+      name="keywords"
+      content="simpletodolist, lista de tareas, tareas, to do"
+    />
+    <link
+      rel="canonical"
+      href="https://johnjanieltr.github.io/simpletodolist/app"
+    />
+    <meta property="og:title" content="Simpletodolist" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://johnjanieltr.github.io/simpletodolist/app"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Simpletodolist" />
+    <meta
+      name="twitter:description"
+      content="Simpletodolist es una herramienta que te ayuda a llevar tus tareas guardadas en una lista"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <title>Simpletodolist</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <main class="main" id="main">
+        <header class="header">
+          <h1 class="header__title" id="header-title">simpletodolist</h1>
+          <span class="header__count hidden" id="header-count">2</span>
+        </header>
+        <section class="tasks-section center" id="tasks-section">
+          <img
+            src="./assets/images/4105842_2152162.png"
+            alt="imagen de tarea"
+            class="tasks-section__img hidden"
+            id="tasks-section-img"
+          />
+          <span class="tasks-section__info" id="tasks-section-info"></span>
+          <ul class="tasks-list" id="tasks-list"></ul>
+        </section>
+      </main>
+      <section class="menu" id="menu">
+        <div class="menu__btn" id="menu-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            class="menu__btn-icon"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </div>
+        <div class="m-user">
+          <img
+            src="./assets/icons/person.svg"
+            alt="user"
+            class="m-user__icon"
+          />
+          <span class="m-user__name">User</span>
+        </div>
+        <section class="categories-section">
+          <span class="categories-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              class="categories-toggle__icon"
+            >
+              <path
+                d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"
+              />
+            </svg>
+            <h2 class="categories-toggle__title">categorias</h2>
+          </span>
+          <ul class="categories" id="categories"></ul>
+        </section>
+      </section>
+    </div>
+    <div class="modal-container" id="modal-container">
+      <div class="task-modal" id="task-modal">
+        <form class="task-modal__form" id="task-modal-form" autocomplete="off">
+          <input
+            type="text"
+            placeholder="Ingrese nueva tarea aqui"
+            autocomplete="off"
+            class="task-modal__input-text"
+            name="task-name"
+            id="input-text"
+          />
+          <select
+            name="task-category"
+            id="input-category"
+            class="task-modal__select"
+          ></select>
+          <button type="submit" class="task-modal__submit-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              class="task-modal__submit-btn-icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="action-btns action-btns--left" id="toggle-menu-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 -960 960 960"
+        class="action-btns__icon"
+      >
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
+    </div>
+    <div class="action-btns action-btns--right" id="open-mt-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+        class="action-btns__icon"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+        />
+      </svg>
+    </div>
+    <div class="shadow-screen hidden" id="shadow-screen"></div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@use "./normalize";
+@use "utilities";
+@import "./variables";
+
+$btns-bg-color: #3e5579;
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+
+  &__logo {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 2.3rem;
+  }
+
+  &__title {
+    font-size: $step-2;
+    cursor: pointer;
+  }
+}
+
+.main {
+  text-align: center;
+
+  &__center {
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  &__title {
+    font-size: $step-5;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  font-size: $step-0;
+  padding: 0.5rem 1rem;
+  background-color: $btns-bg-color;
+  color: $btns-color;
+  border-radius: 0.5rem;
+
+  &--high {
+    font-size: $step-1;
+  }
+}
+
+.btn:hover {
+  opacity: 0.8;
+}

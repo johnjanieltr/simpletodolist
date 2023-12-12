@@ -1,0 +1,118 @@
+@import "../variables";
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -75%;
+  width: 75%;
+  height: 100vh;
+  padding: 1.5rem 1rem;
+  cursor: default;
+  background-color: $secundary-bg-color;
+  z-index: 950;
+  transition: left 0.4s ease-out;
+
+  &--is-active {
+    left: 0;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__btn-icon {
+    border-radius: inherit;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+// username in menu
+.m-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  .m-user__icon {
+    width: 1.7rem;
+  }
+
+  .m-user__name {
+    font-size: $step-1;
+    margin-left: 0.7rem;
+    text-transform: none;
+  }
+}
+
+// categories in menu
+.categories-section {
+  display: block;
+  padding: 0.5rem;
+}
+
+.categories-toggle {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__title {
+    margin-left: 0.7rem;
+    font-size: $step-0;
+    text-transform: capitalize;
+  }
+  &__icon {
+    width: 1.3rem;
+  }
+}
+
+.categories {
+  display: block;
+
+  &__item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 0.4rem;
+    margin-bottom: 2.1vh;
+  }
+  &__icon {
+    width: 1.27rem;
+  }
+  &__name {
+    margin-left: 1.3rem;
+    font-size: $step-0;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+  }
+  &__count {
+    margin-left: auto;
+    font-size: $step-0;
+  }
+}
+
+@media (min-width: 576px) {
+  .menu {
+    position: sticky;
+    display: flex;
+    top: 0;
+    left: 0;
+    display: block;
+    max-width: 280px;
+    order: -1;
+  }
+
+  .menu__btn {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+$main-bg-color: #fbfbfb;
+$secundary-bg-color: #f7f6f5;
+$main-text-color: #202020;
+$main-font-family: Helvetica, Arial, sans-serif;
+$btns-bg-color: #7dabf6;
+$btns-bg-color2: #4c6ea1;
+$btns-color: #fff;
+$shadow-screen: #00000080;
+
+$step--2: clamp(0.6rem, 0.6101rem + -0.013vw, 0.6075rem);
+$step--1: clamp(0.7294rem, 0.7222rem + 0.0359vw, 0.75rem);
+$step-0: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+$step-1: clamp(1.05rem, 1.0076rem + 0.212vw, 1.1719rem);
+$step-2: clamp(1.26rem, 1.1887rem + 0.3565vw, 1.465rem);
+$step-3: clamp(1.5119rem, 1.4008rem + 0.5554vw, 1.8313rem);
+$step-4: clamp(1.8144rem, 1.6494rem + 0.825vw, 2.2888rem);
+$step-5: clamp(2.1775rem, 1.9397rem + 1.1891vw, 2.8613rem);
